@@ -224,6 +224,14 @@
           {
             "name": "Right",
             "value": "right"
+          },
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Bottom",
+            "value": "bottom"
           }
         ]
       }
