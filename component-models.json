@@ -200,7 +200,7 @@
         "component": "text-input",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
+        "label": "Alt text",
         "value": ""
       },
       {
@@ -212,10 +212,10 @@
       },
       {
         "component": "select",
-        "name": "type",
+        "name": "image-position",
         "value": "",
         "label": "Image Position",
-        "valueType": "string",
+        "valueType": "hidden",
         "options": [
           {
             "name": "Left",

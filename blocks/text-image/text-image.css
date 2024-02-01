@@ -12,7 +12,7 @@ main .text-image-container {
   min-height: 300px;
 }
 
-.text-image h1 {
+.text-image p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
