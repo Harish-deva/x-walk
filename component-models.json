@@ -215,7 +215,7 @@
         "name": "image-position",
         "value": "",
         "label": "Image Position",
-        "valueType": "hidden",
+        "valueType": "string",
         "options": [
           {
             "name": "Left",
