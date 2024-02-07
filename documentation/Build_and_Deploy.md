@@ -26,5 +26,8 @@ curl -X POST https://admin.hlx.page/preview/Harish-deva/x-walk/feature-image-tex
 1. Kindly note that the branch name if contains '/' should be replaced with '-' if it must be previewed on a browser
 1. Logs of Author / preview / publish can be requested individually.
 
+## What is the branching strategy ?
+
+![image](../resources/branching_strategy_3_repos.png)
 
 

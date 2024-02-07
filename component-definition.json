@@ -116,8 +116,7 @@
                 "template": {
                   "name": "text-image",
                   "model": "text-image",
-                  "title": "Text Image",
-                  "classes": ["right", "left"]
+                  "title": "Text Image"
                 }
               }
             }
