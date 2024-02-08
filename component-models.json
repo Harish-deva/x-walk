@@ -212,7 +212,8 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "Image Position",
+        "filter": "imagePosition",
         "value": "",
         "label": "Image Position",
         "valueType": "string",
