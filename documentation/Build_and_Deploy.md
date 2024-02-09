@@ -4,6 +4,7 @@
 
 1. Create a new Feature Branch (checked out from develop / main branch) 
 1. Follow the regular naming conventions for the feature branches / hotfix & more
+2. Responsiveness is handled by making use of the media queries
 
 ## Pre-requisites to Preview / Publish content
 
