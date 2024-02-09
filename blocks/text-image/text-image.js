@@ -6,7 +6,7 @@ export function generateTextImageDOM(props) {
   // Build DOM
   const textImageDOM = document.createRange().createContextualFragment(`
     <div style="height: 350px; background-color: gainsboro;">
-        <div class='background' float='${imagePosition.innerHTML}'>${picture ? picture.outerHTML : ''}</div>
+        <div class='background' style='float:${imagePosition.innerHTML}'>${picture ? picture.outerHTML : ''}</div>
         <div class='foreground'>
           <div class='text'>
             <div class='textarea'>${textarea.innerHTML}</div>
