@@ -1,13 +1,10 @@
-
-/* eslint-disable no-plusplus */
-export function generateTextImageDOM(props, classes) {
+export function generateTextImageDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
   const [pictureContainer, textarea, imagePosition] = props;
   const picture = pictureContainer.querySelector('picture');
-  const hasTextarea = textarea.textContent.trim() !== '';
 
   // Build DOM
-  const text-imageDOM = document.createRange().createContextualFragment(`
+  const textImageDOM = document.createRange().createContextualFragment(`
     <div class='background'>${picture ? picture.outerHTML : ''}</div>
     <div class='foreground'>
       <div class='text'>
@@ -20,13 +17,13 @@ export function generateTextImageDOM(props, classes) {
   `);
 
   // add final teaser DOM and classes if used as child component
-  return text-imageDOM;
+  return textImageDOM;
 }
 
 export default function decorate(block) {
   // get the first and only cell from each row
   const props = [...block.children].map((row) => row.firstElementChild);
-  const text-imageDOM = generateTextImageDOM(props, block.classList);
+  const textImageDOM = generateTextImageDOM(props);
   block.textContent = '';
-  block.append(text-imageDOM);
+  block.append(textImageDOM);
 }

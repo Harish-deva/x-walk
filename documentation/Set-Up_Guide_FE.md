@@ -25,5 +25,12 @@
 1. Lint your code using the command _**'npm run lint'**_
 1. Install the code using _**'npm i'**_
 
+***
+**Recommended Software Versions**
+***
+
+- node: v20.11.0
+- npm: 10.2.4
+- yarn: 1.22.21
 
 
