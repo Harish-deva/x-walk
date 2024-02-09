@@ -19,7 +19,9 @@ main .text-image-container {
   color: grey;
 }
 
+/**
 .text-image picture {
+  max-width: 600px;
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -30,6 +32,16 @@ main .text-image-container {
 .text-image img {
   object-fit: cover;
   width: 50%;
-  float: left;
   height: 100%;
+}
+
+**/
+.text-image img {
+  width: 800px;
+  height: 350px;
+}
+
+.text-image .foreground .text{
+  font-weight: 900;
+  font-size: xxx-large;
 }
