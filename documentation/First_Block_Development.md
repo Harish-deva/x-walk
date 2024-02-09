@@ -102,8 +102,15 @@
 ### Component styles & scripts
 The Component styles & scripts can be defined in the blocks section (within the blocks folder)
 eg. a new folder named "text-image" has been created to hold the 2 files 
-* text-image.css
-* text-image.js
+* [text-image.css](https://github.com/Harish-deva/x-walk/blob/main/blocks/text-image/text-image.css)
+* [text-image.js](https://github.com/Harish-deva/x-walk/blob/main/blocks/text-image/text-image.js)
+
+Post making all the changes the outcome can be seen like this, 
+Text Image component with left aligned image 
+![](../resources/text-image-left.png)
+
+Text Image component with right aligned image
+![](../resources/text-image-right.png)
 
 Kindly refer the [examples](https://github.com/adobe-experience-league/exlm/tree/56a35accfd904e3636b42262e50f0f508683fd47/blocks) from Adobe that has quite a lot of component examples. 
 
