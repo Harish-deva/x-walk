@@ -212,7 +212,7 @@
       },
       {
         "component": "select",
-        "name": "Image Position",
+        "name": "imagePosition",
         "filter": "imagePosition",
         "value": "",
         "label": "Image Position",
