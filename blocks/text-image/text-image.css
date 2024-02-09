@@ -30,5 +30,6 @@ main .text-image-container {
 .text-image img {
   object-fit: cover;
   width: 50%;
+  float: left;
   height: 100%;
 }

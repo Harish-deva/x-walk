@@ -108,5 +108,6 @@ eg. a new folder named "text-image" has been created to hold the 2 files
 Kindly refer the [examples](https://github.com/adobe-experience-league/exlm/tree/56a35accfd904e3636b42262e50f0f508683fd47/blocks) from Adobe that has quite a lot of component examples. 
 
 ### Types of components
-Blocks (Content based components - image , text , buttons etc.)
-Section (Similar to container)
+
+1. Blocks (Content based components - image , text , buttons etc.)
+2. Section (Similar to container)
