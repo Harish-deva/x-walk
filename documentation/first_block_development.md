@@ -2,8 +2,8 @@
 
 ## Pre-requisites
 
-1. Kindly ensure that you have gone through the [set up guides](Set-Up_Guide_FE.md).
-2. Kindly ensure that you are aware of the [FAQ's](FAQ.md) and the [Build](Build_and_Deploy.md) docs
+1. Kindly ensure that you have gone through the [set up guides](set-up_guide_fe.md).
+2. Kindly ensure that you are aware of the [FAQ's](faqs.md) and the [Build](build_and_deploy.md) docs
 3. Kindly make sure that the Sandbox is up and running !
 4. Its also highly recommended to go through the documentation on [aem live](https://www.aem.live/docs/#build)
 
