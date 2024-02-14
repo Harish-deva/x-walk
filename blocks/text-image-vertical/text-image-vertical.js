@@ -6,14 +6,23 @@ export function generateTextImageDOM(props) {
   // Build DOM
   const textImageDOM = document.createRange().createContextualFragment(`
     <div style="height: 350px; background-color: gainsboro;">
-        <div class='background'>${picture ? picture.outerHTML : ''}</div>
-        <div class='foreground'>
-          <div class='text'>
+    ${
+  imagePosition.textContent.trim() !== 'top'
+    ? `<div class='background'>${picture ? picture.outerHTML : ''}</div>`
+    : ''
+}
+      <div class='foreground'>
+        <div class='text'>
             <div class='textarea'>${textarea.innerHTML}</div>
-          </div>
-          <div class='spacer'>
-          </div>
         </div>
+        <div class='spacer'>
+        </div>
+      </div>
+      ${
+  imagePosition.textContent.trim() !== 'bottom'
+    ? `<div class='background'>${picture ? picture.outerHTML : ''}</div>`
+    : ''
+}
     </div>
   `);
 
