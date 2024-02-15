@@ -5,9 +5,9 @@ export function generateTextImageDOM(props) {
 
   // Build DOM
   const textImageDOM = document.createRange().createContextualFragment(`
-    <div style="height: 350px; background-color: gainsboro;">
+    <div style="width: 400px; background-color: gainsboro;">
     ${
-  imagePosition.textContent.trim() !== 'top'
+  imagePosition.textContent.trim() == 'top'
     ? `<div class='background'>${picture ? picture.outerHTML : ''}</div>`
     : ''
 }
@@ -19,7 +19,7 @@ export function generateTextImageDOM(props) {
         </div>
       </div>
       ${
-  imagePosition.textContent.trim() !== 'bottom'
+  imagePosition.textContent.trim() == 'bottom'
     ? `<div class='background'>${picture ? picture.outerHTML : ''}</div>`
     : ''
 }
