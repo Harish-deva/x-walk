@@ -1,6 +1,6 @@
 export function generateTextImageDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
-  const [pictureContainer, textarea, imagePosition] = props;
+  const [pictureContainer, textarea] = props;
   const picture = pictureContainer.querySelector('picture');
 
   // Build DOM
