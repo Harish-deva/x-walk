@@ -273,5 +273,32 @@
         ]
       }
     ]
+  },
+  {
+    "id": "BMW-Iframe",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "iFrameUrl",
+        "label": "url",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "name": "Height",
+        "value": "",
+        "label": "Height",
+        "valueType": "string"
+      }
+      {
+        "component": "text-input",
+        "name": "Width",
+        "value": "",
+        "label": "Width",
+        "valueType": "string"
+      }
+      
+    ]
   }
 ]
