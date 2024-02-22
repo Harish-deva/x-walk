@@ -290,7 +290,7 @@
         "value": "",
         "label": "Height",
         "valueType": "string"
-      }
+      },
       {
         "component": "text-input",
         "name": "Width",
