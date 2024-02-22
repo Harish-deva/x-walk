@@ -112,7 +112,7 @@ function loadDelayed() {
 
 function launchVariables() {
   if (window.adobeDataLayer) {
-    window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
+    window.adobeDataLayer.push({ event: 'aem page iframe test', foo: 'bar', key: 'value' });
   }
 }
 
