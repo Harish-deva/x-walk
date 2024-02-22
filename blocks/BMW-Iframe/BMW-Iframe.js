@@ -5,11 +5,11 @@ export function generateIFrameDOM(props) {
 
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
-    <div>
+    
     <iframe src="https://feature-script-for-adobe-data-layer--x-walk--harish-deva.hlx.page" width="1000" height="1000" style="border:1px solid black;">
     </iframe>
     
-    </div>
+    
   `);
   return iFrameDOM;
 }
