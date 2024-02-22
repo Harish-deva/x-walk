@@ -3,7 +3,7 @@ export function generateIFrameDOM(props) {
   const [iFrameUrl, iframeHeight, iframeWidth] = props;
   // const picture = pictureContainer.querySelector('picture');
   // Build DOM
-  console.log(iFrameUrl.textContent,'Hello Domain');
+  console.log(iFrameUrl.textContent, 'Hello Domain');
   const iFrameDOM = document.createRange().createContextualFragment(`
     <div>
     <iframe src="${iFrameUrl.textContent}" width="${iframeWidth.innerHTML}" height="${iframeHeight.innerHTML}" style="border:1px solid black;">
