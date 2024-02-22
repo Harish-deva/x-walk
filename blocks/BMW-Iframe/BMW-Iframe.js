@@ -1,6 +1,6 @@
 export function generateIFrameDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
-  const [iFrameUrl, iframeHeight, iframeWidth] = props;
+  // const [iFrameUrl, iframeHeight, iframeWidth] = props;
   // const picture = pictureContainer.querySelector('picture');
 
   // Build DOM
