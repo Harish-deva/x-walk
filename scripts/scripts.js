@@ -110,10 +110,17 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+function launchVariables() {
+  if (window.adobeDataLayer) {
+    window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
+  }
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  launchVariables();
 }
 
 loadPage();
