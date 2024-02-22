@@ -11,8 +11,6 @@ export function generateIFrameDOM(props) {
     
     </div>
   `);
-
-  // add final teaser DOM and classes if used as child component
   return iFrameDOM;
 }
 
