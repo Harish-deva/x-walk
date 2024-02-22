@@ -1,12 +1,12 @@
 export function generateIFrameDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
-  const [iFrameUrl, Height, Width] = props;
+  const [iFrameUrl, iframeHeight, iframeWidth] = props;
   // const picture = pictureContainer.querySelector('picture');
 
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
     <div>
-    <iframe src="${iFrameUrl}" width="${Width}" height="${Height}" style="border:1px solid black;">
+    <iframe src="${iFrameUrl}" width="${iframeWidth}" height="${iframeHeight}" style="border:1px solid black;">
     </iframe>
     
     </div>
