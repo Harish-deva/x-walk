@@ -286,16 +286,16 @@
       },
       {
         "component": "text-input",
-        "name": "Height",
+        "name": "iframeHeight",
         "value": "",
-        "label": "Height",
+        "label": "iframeHeight",
         "valueType": "string"
       },
       {
         "component": "text-input",
-        "name": "Width",
+        "name": "iframeWidth",
         "value": "",
-        "label": "Width",
+        "label": "iframeWidth",
         "valueType": "string"
       }
       
