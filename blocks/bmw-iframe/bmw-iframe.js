@@ -2,11 +2,10 @@ export function generateIFrameDOM() {
   // Extract properties, always same order as in model, empty string if not set
   // const [iFrameUrl, iframeHeight, iframeWidth] = props;
   // const picture = pictureContainer.querySelector('picture');
-
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
-    
-    <iframe src="https://feature-script-for-adobe-data-layer--x-walk--harish-deva.hlx.page" width="1000" height="1000" style="border:1px solid black;">
+    <div>
+    <iframe src="${iFrameUrl.textContent}" width="${iframeWidth.innerHTML}" height="${iframeHeight.innerHTML}" style="border:1px solid black;">
     </iframe>
     
     
