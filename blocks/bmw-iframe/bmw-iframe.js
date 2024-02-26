@@ -8,7 +8,7 @@ export function generateIFrameDOM(props) {
     <iframe src="${iFrameUrl.textContent}" width="${iframeWidth.innerHTML}" height="${iframeHeight.innerHTML}" style="border:1px solid black;">
     </iframe>
     
-    </div>
+    
   `);
   return iFrameDOM;
 }

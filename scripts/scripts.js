@@ -12,6 +12,8 @@ import {
   loadCSS,
 } from './aem.js';
 
+<script src="https://assets.adobedtm.com/5eef5b667374/31ec2769917a/launch-50aa95111531-development.min.js" async=""></script>;
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 /**
