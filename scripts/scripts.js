@@ -112,7 +112,7 @@ function loadDelayed() {
 
 function launchVariables() {
   if (window.adobeDataLayer) {
-    if (window.location.pathname.endsWith('/') || window.location.pathname.endsWith('ancestor')) {
+    if (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor')) {
       window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
     } else {
       window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
