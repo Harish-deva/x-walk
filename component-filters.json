@@ -38,7 +38,10 @@
       "columns",
       "text-image",
       "text-image-vertical",
-      "BMW-Iframe"
+      "BMW-Iframe",
+      "accordion-group",
+      "carousel",
+      "marquee"
     ]
   },
   {
@@ -46,5 +49,9 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "accordion",
+    "components": ["accordion"]
   }
 ]

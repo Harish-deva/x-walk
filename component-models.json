@@ -300,5 +300,230 @@
       }
       
     ]
+  },
+  {
+    "id": "accordion-group",
+    "fields": []
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "headingType",
+        "value": "h3",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text-area",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      }
+    ]
+  },
+  {
+    "id": "carousel",
+    "fields": []
+  },
+  {
+    "id": "marquee",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Subject Image",
+        "description": "The marquee subject image, min Xpx x Ypx...",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "fileReferenceAlt",
+        "value": "",
+        "label": "Subject Image Description",
+        "description": "A descriptive text of the image will be shown as tooltip."
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Background Color",
+        "description": "The marquee background color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Gray",
+            "value": "bg-spectrum-gray-700"
+          },
+          {
+            "name": "Blue",
+            "value": "bg-spectrum-blue-700"
+          },
+          {
+            "name": "Green",
+            "value": "bg-spectrum-green-700"
+          },
+          {
+            "name": "Orange",
+            "value": "bg-spectrum-orange-700"
+          },
+          {
+            "name": "Red",
+            "value": "bg-spectrum-red-700"
+          },
+          {
+            "name": "Celery",
+            "value": "bg-spectrum-celery-700"
+          },
+          {
+            "name": "Chartreuse",
+            "value": "bg-spectrum-chartreuse-700"
+          },
+          {
+            "name": "Cyan",
+            "value": "bg-spectrum-cyan-700"
+          },
+          {
+            "name": "Fuchsia",
+            "value": "bg-spectrum-fuchsia-700"
+          },
+          {
+            "name": "Indigo",
+            "value": "bg-spectrum-indigo-700"
+          },
+          {
+            "name": "Magenta",
+            "value": "bg-spectrum-magenta-700"
+          },
+          {
+            "name": "Purple",
+            "value": "bg-spectrum-purple-700"
+          },
+          {
+            "name": "Seafoam",
+            "value": "bg-spectrum-seafoam-700"
+          },
+          {
+            "name": "Yellow",
+            "value": "bg-spectrum-yellow-700"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "eyebrow",
+        "value": "",
+        "label": "Eyebrow",
+        "description": "Sets the small pre-title above the title."
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Heading",
+        "description": "Sets the main title of the marquee."
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "titleType",
+        "value": "h3",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text-area",
+        "valueType": "string",
+        "name": "longDescr",
+        "value": "",
+        "label": "Long Description",
+        "description": "The description shown in Desktop and Tablet view."
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "cta1Text",
+        "value": "",
+        "label": "First CTA Text",
+        "description": "Text to be shown inside button."
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "cta1",
+        "value": "",
+        "label": "First CTA Link",
+        "description": "What link to open when clicking the button."
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "cta2Text",
+        "value": "",
+        "label": "Sign up CTA Text",
+        "description": "Text to be shown inside button."
+      }
+    ]
   }
+
 ]
