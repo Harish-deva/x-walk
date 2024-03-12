@@ -13,8 +13,8 @@
 1. Use the command below to generate the content & its modifications on the preview server
 
 ```sh
-curl -X POST https://admin.hlx.page/preview/Harish-deva/x-walk/feature-image-text/ -u xwalk-admin:JdAhR9hHeb5g8wK
-```
+
+```curl -X POST https://admin.hlx.page/preview/Harish-deva/x-walk/feature-image-text/ -u xwalk-admin:JdAhR9hHeb5g8wK
 
 ## Key takeaways
 
