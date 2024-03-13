@@ -121,9 +121,10 @@ function launchVariables() {
   // Check if the click was a link
 
   const anchor = document.getElementById('feature-frame').src;
-  if (!anchor || anchor.endsWith('AdobeOrg') ) return;
+  if (!anchor || !anchor.endsWith('AdobeOrg')) {
+    return;
+  }
   const url = new URL(anchor);
-
   alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
 }
 
