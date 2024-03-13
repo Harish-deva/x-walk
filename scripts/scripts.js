@@ -123,9 +123,12 @@ function launchVariables() {
   const anchor = document.getElementById('feature-frame').src;
   if (!anchor || anchor.endsWith('AdobeOrg')) {
     return;
+  }else if (anchor.endsWith('/component-test-page')) {
+    const url = new URL(anchor);
+    alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
+  }else {
+    console.log('anchor is '+anchor);
   }
-  const url = new URL(anchor);
-  alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
 }
 
 async function loadPage() {
