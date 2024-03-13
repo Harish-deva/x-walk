@@ -125,7 +125,7 @@ function launchVariables() {
   const url = new URL(anchor);
   if (!url.hostname.endsWith('feature-test-frame--x-walk--harish-deva.hlx.page/component-test-page')) return;
 
-  alloy('appendIdentityToUrl', { url: anchor });
+  alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
 }
 
 async function loadPage() {
