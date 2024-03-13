@@ -117,7 +117,7 @@ function launchVariables() {
   }else if (anchor.endsWith('/component-test-page')) {
     const url = new URL(anchor);
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
-  }else if (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor')){
+  }else if (window.adobeDataLayer && (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor'))){
     window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
   }else{
     return;
