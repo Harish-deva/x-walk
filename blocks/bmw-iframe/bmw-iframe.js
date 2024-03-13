@@ -5,7 +5,7 @@ export function generateIFrameDOM(props) {
   // Build DOM
   const iFrameDOM = document.createRange().createContextualFragment(`
     <div>
-    <iframe src="${iFrameUrl.textContent}" width="${iframeWidth.innerHTML}" height="${iframeHeight.innerHTML}" style="border:1px solid black;">
+    <iframe src="${iFrameUrl.textContent}" width="${iframeWidth.innerHTML}" height="${iframeHeight.innerHTML}" id="feature-frame" style="border:1px solid black;">
     </iframe>
     
     </div>

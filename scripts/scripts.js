@@ -118,6 +118,13 @@ function launchVariables() {
       window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
     }
   }
+    // Check if the click was a link
+    const anchor = document.getElementById("feature-frame").src;
+    if (!anchor) return;
+    const url = new URL(anchor);
+    if (!url.hostname.endsWith("feature-test-frame--x-walk--harish-deva.hlx.page/component-test-page")) return;
+
+    alloy("appendIdentityToUrl", {url: anchor}).then(result => {document.location = anchor;});
 }
 
 async function loadPage() {
