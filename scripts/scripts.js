@@ -114,14 +114,14 @@ function launchVariables() {
   if (window.adobeDataLayer) {
     if (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor')) {
       window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
-    } else if(document.getElementById("feature-frame").src.endsWith("AdobeOrg")) {
+    } else if(document.getElementById('feature-frame').src.endsWith('AdobeOrg')) {
       window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
     }
   }
   // Check if the click was a link
 
   const anchor = document.getElementById('feature-frame').src;
-  if (!anchor) return;
+  if (!anchor || anchor.endsWith('AdobeOrg') ) return;
   const url = new URL(anchor);
 
   alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
