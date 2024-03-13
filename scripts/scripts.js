@@ -111,16 +111,12 @@ function loadDelayed() {
 }
 
 function launchVariables() {
- const anchor = document.getElementById('feature-frame').src;
-  if (window.adobeDataLayer && anchor.endsWith('AdobeOrg')){
-    window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
-  }else if (window.adobeDataLayer && window.location.hostname.startsWith('main')){
-    window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
-  }else if (anchor.endsWith('/component-test-page')) {
-    const url = new URL(anchor);
-    alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
-  }else{
-    return;
+  if (window.adobeDataLayer) {
+    if (document.URL.endsWith('component-test-page')) {
+      return;
+    } else {
+      window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
+    }
   }
 }
 
