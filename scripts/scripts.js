@@ -121,7 +121,7 @@ function launchVariables() {
   // Check if the click was a link
 
   const anchor = document.getElementById('feature-frame').src;
-  if (!anchor || !anchor.endsWith('AdobeOrg')) {
+  if (!anchor || anchor.endsWith('AdobeOrg')) {
     return;
   }
   const url = new URL(anchor);
