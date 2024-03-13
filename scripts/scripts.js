@@ -112,11 +112,11 @@ function loadDelayed() {
 
 function launchVariables() {
   const anchor = document.getElementById('feature-frame').src;
-  if (window.adobeDataLayer && window.location.hostname.startsWith('main')){
-    window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
-  }else if (anchor.endsWith('/component-test-page')) {
+  if (anchor.endsWith('/component-test-page')) {
     const url = new URL(anchor);
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
+  }else if (window.adobeDataLayer && window.location.hostname.startsWith('main')){
+    window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
   }
 }
 
