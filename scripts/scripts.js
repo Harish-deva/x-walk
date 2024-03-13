@@ -111,23 +111,16 @@ function loadDelayed() {
 }
 
 function launchVariables() {
-  if (window.adobeDataLayer) {
-    if (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor')) {
-      window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
-    } else if(document.getElementById('feature-frame').src.endsWith('AdobeOrg')) {
-      window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
-    }
-  }
-  // Check if the click was a link
-
   const anchor = document.getElementById('feature-frame').src;
-  if (!anchor || anchor.endsWith('AdobeOrg')) {
-    return;
+  if (anchor.endsWith('AdobeOrg') && window.adobeDataLayer){
+    window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
   }else if (anchor.endsWith('/component-test-page')) {
     const url = new URL(anchor);
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
-  }else {
-    console.log('anchor is '+anchor);
+  }else if (window.location.hostname.startsWith('main') || window.location.pathname.endsWith('ancestor')){
+    window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
+  }else{
+    return;
   }
 }
 
