@@ -115,7 +115,9 @@ function launchVariables() {
   if (anchor.endsWith('/component-test-page')) {
     const url = new URL(anchor);
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
-  }else if (window.adobeDataLayer && window.location.hostname.startsWith('main')){
+  }
+
+  if (window.adobeDataLayer && window.location.hostname.startsWith('main')){
     window.adobeDataLayer.push({ event: 'aem page loaded', foo: 'bar', key: 'value' });
   }
 }
