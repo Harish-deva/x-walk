@@ -123,7 +123,6 @@ function launchVariables() {
   const anchor = document.getElementById('feature-frame').src;
   if (!anchor) return;
   const url = new URL(anchor);
-  if (!url.hostname.startsWith('https://feature-test-frame--x-walk--harish-deva.hlx.page/component-test-page')) return;
 
   alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
 }
