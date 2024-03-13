@@ -112,9 +112,7 @@ function loadDelayed() {
 
 function launchVariables() {
   if (window.adobeDataLayer) {
-    if (document.URL.endsWith('component-test-page')) {
-      return;
-    } else {
+    if (!document.URL.endsWith('component-test-page')) {
       window.adobeDataLayer.push({ event: 'Configurator Start', foo: 'bar', key: 'value' });
     }
   }
