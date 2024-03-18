@@ -302,6 +302,7 @@
     ]
   },
   {
-    "id": "stock-locator"
+    "id": "stock-locator",
+    "fields": []
   }
 ]
