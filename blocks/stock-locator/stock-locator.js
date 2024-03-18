@@ -1,4 +1,4 @@
-import 'stockcar.aem.min.js';
+// import '../stock-locator/stockcar.aem.min.js';
 
 export function generateStockLocatorDOM() {
   // Extract properties, always same order as in model, empty string if not set
