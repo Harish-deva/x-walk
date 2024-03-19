@@ -20,9 +20,9 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  /* --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif; */
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -41,12 +41,6 @@
   --nav-height: 64px;
 }
 
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 100.06%;
-  ascent-override: 95%;
-  src: local('Arial');
-}
 
 @media (width >= 900px) {
   :root {
@@ -59,16 +53,6 @@
   }
 }
 
-body {
-  font-size: var(--body-font-size-m);
-  margin: 0;
-  font-family: var(--body-font-family);
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  display: none;
-}
-
 body.appear {
   display: block;
 }
@@ -79,7 +63,7 @@ header {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: var(--heading-font-family);
+  font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
@@ -100,7 +84,6 @@ p, dl, ol, ul, pre, blockquote {
 }
 
 code, pre {
-  font-family: var(--fixed-font-family);
   font-size: var(--body-font-size-s);
 }
 
@@ -122,7 +105,7 @@ main pre {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -133,7 +116,7 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
@@ -190,13 +173,14 @@ main .section {
   padding: 64px 16px;
 }
 
+/* mobile 
 @media (width >= 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
-
-@media (width >= 900px) {
+/* desktop 
+@media (width >= 769px) {
   .section > div {
     max-width: 1200px;
     margin: auto;
@@ -207,4 +191,25 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* Media query for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* Media query for all desktop */
+@media only screen and (min-width: 1025px) {
+  body {
+    background-color: blue;
+  }
 }
