@@ -111,7 +111,7 @@ function loadDelayed() {
 }
 
 function launchVariables() {
-  const anchor = document.getElementById('feature-frame').src;
+  const anchor = document.getElementById('feature-frame');
   if (anchor.endsWith('/component-test-page')) {
     const url = new URL(anchor);
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('feature-frame').src = result.url;});
@@ -126,7 +126,7 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  launchVariables();
+  ///launchVariables();
 }
 
 loadPage();
