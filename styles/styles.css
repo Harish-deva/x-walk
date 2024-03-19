@@ -9,6 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+ @import url(https://www.bmw.rs/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/js/app/ds2-stockcar.min.prod4.20240308113754.min.css);
 
 :root {
   /* colors */
@@ -208,3 +209,5 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+
