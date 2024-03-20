@@ -1,5 +1,5 @@
 // import '../stock-locator/stockcar.aem.min.js';
-
+import {launcSL} from  '../../scripts/scripts.js';
 export function generateStockLocatorDOM() {
   // Extract properties, always same order as in model, empty string if not set
 
@@ -34,4 +34,5 @@ export default function decorate(block) {
   const stockLocatorDOM = generateStockLocatorDOM();
   block.textContent = '';
   block.append(stockLocatorDOM);
+  launcSL()
 }
