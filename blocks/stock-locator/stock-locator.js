@@ -39,8 +39,6 @@ export default function decorate(block) {
   document.querySelector('stockcar').setAttribute('config', decodeURI(getMetadata("stockcarconfig")));
   document.querySelector('stockcar').setAttribute('generic-disclaimer', decodeURI(getMetadata("stockcargen")));
   document.querySelector('stockcar').setAttribute('data-tracking-component', decodeURI(getMetadata("stocktracking")));
-
-  console.log('test value',document.querySelector('stockcar').getAttribute('i18n'));
   launcSL();
 }
 
