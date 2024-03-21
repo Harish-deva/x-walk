@@ -154,7 +154,7 @@ a.button:any-link, button {
   border-radius: 30px;
 }
 
-.tw-container button {
+.tw-container button.show-all-cars {
   margin: 0;
 }
 
