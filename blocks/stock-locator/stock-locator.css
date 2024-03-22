@@ -7,4 +7,7 @@
 .tw-container button.show-all-cars {
     margin: 0;
   }
-  
+  .model-card-button .tw-p-300 {
+    padding: 15px 0;
+ }
+ 
