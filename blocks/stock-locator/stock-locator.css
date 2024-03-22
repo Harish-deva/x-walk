@@ -1,7 +1,9 @@
 /* stylelint-disable-next-line import-notation */
 
 /* @import "url(stock-locator.min.css)"; */
-
+/* stylelint-disable-next-line function-url-quotes */
+@import url(https://www.bmw.rs/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/js/app/ds2-stockcar.min.prod4.20240308113754.min.css); */
+/* stylelint-disable property-no-vendor-prefix */
 .tw-container button.show-all-cars {
     margin: 0;
   }
