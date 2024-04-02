@@ -3,7 +3,7 @@
     "id": "main",
     "components": [
       "section",
-      "BMW UI Comps"
+      "bmw_main_section"
     ]
   },
   {
@@ -11,7 +11,7 @@
     "components": []
   },
   {
-    "id": "BMW UI Comps",
+    "id": "bmw_main_section",
     "components": [
       "text-image",
       "section"
@@ -38,8 +38,7 @@
       "columns",
       "text-image",
       "text-image-vertical",
-      "BMW-Iframe",
-      "stock-locator"
+      "BMW-Iframe"
     ]
   },
   {
