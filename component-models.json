@@ -302,6 +302,10 @@
     ]
   },
   {
+    "id": "stock-locator",
+    "fields": []
+  },
+  {
     "id": "footer-section",
     "fields": [
       {
